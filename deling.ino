@@ -23,7 +23,7 @@ float dis2;
 float dis3;
 float distotal;
 float dist_mayor=2000;
-float label1;
+float labell;
 float label2;
 float label3;
 int ver=1000;
@@ -121,13 +121,15 @@ void loop(){
           label3=matriz_s3[fil_s][4];
      //Serial.println(label);
           }//endif
-                  dis=0;
+                  dis1=0;
+                  dis2=0;
+                  dis3=0;
                   col_s=0;
       }//endfor fil_s
   fil_s=0;
   dist_mayor=2000;
       
-    if(label1==matriz[fil][4]){
+    if(labell==matriz[fil][4]){
       Serial.print(fil);
        Serial.print(':');
       Serial.println('D');
@@ -138,7 +140,7 @@ void loop(){
       Serial.println('S');
       }
 
-          if(label2==matriz[fil][4]){
+  if(label2==matriz[fil][4]){
       Serial.print(fil);
        Serial.print(':');
       Serial.println('D');
@@ -149,7 +151,7 @@ void loop(){
       Serial.println('S');
       }
 
-          if(label3==matriz[fil][4]){
+    if(label3==matriz[fil][4]){
       Serial.print(fil);
        Serial.print(':');
       Serial.println('D');
